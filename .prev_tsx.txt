@@ -1,0 +1,13 @@
+C:\Users\ABOOD\OneDrive\Desktop\My NEXT.JS Applications\ecommerce-and-dashboard\components\shared\DropDownCard.tsx
+C:\Users\ABOOD\OneDrive\Desktop\My NEXT.JS Applications\ecommerce-and-dashboard\components\shared\DropDownContainer.tsx
+C:\Users\ABOOD\OneDrive\Desktop\My NEXT.JS Applications\ecommerce-and-dashboard\components\shared\NavBar\NavBar.tsx
+C:\Users\ABOOD\OneDrive\Desktop\My NEXT.JS Applications\ecommerce-and-dashboard\components\shared\NavBar\NavBarButton.tsx
+C:\Users\ABOOD\OneDrive\Desktop\My NEXT.JS Applications\ecommerce-and-dashboard\components\shared\NavBar\NavBarSecond.tsx
+C:\Users\ABOOD\OneDrive\Desktop\My NEXT.JS Applications\ecommerce-and-dashboard\components\shared\SideBar\SideBar.tsx
+C:\Users\ABOOD\OneDrive\Desktop\My NEXT.JS Applications\ecommerce-and-dashboard\components\shared\SideBar\SideBarLargeDevices.tsx
+C:\Users\ABOOD\OneDrive\Desktop\My NEXT.JS Applications\ecommerce-and-dashboard\components\ui\button.tsx
+C:\Users\ABOOD\OneDrive\Desktop\My NEXT.JS Applications\ecommerce-and-dashboard\components\ui\color-mode.tsx
+C:\Users\ABOOD\OneDrive\Desktop\My NEXT.JS Applications\ecommerce-and-dashboard\components\ui\provider.tsx
+C:\Users\ABOOD\OneDrive\Desktop\My NEXT.JS Applications\ecommerce-and-dashboard\components\ui\sheet.tsx
+C:\Users\ABOOD\OneDrive\Desktop\My NEXT.JS Applications\ecommerce-and-dashboard\components\ui\toaster.tsx
+C:\Users\ABOOD\OneDrive\Desktop\My NEXT.JS Applications\ecommerce-and-dashboard\components\ui\tooltip.tsx

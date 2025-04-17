@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Poppins } from "next/font/google";
+// import { Provider } from "react-redux";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+import StoreProvider from "@/redux/StoreProvider";
+import { Provider } from "@/components/ui/provider";
+import dotenv from "dotenv";
+// import { store } from "@/redux/store";
+///
+dotenv.config();
+const poppins = Poppins({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-poppins",
 });
 
 export const metadata: Metadata = {
@@ -24,10 +26,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className={`${poppins.variable} antialiased`}>
+        {/*Wrapping the App with the redux store*/}
+        <StoreProvider>{children}</StoreProvider>
       </body>
     </html>
   );

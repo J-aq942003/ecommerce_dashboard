@@ -1,0 +1,41 @@
+div.mainddc {
+  transition: color 0.2s, background-color 0.2s;
+  cursor: pointer;
+}
+div.mainddc:hover {
+  background-color: #f8f8f8;
+}
+div.mainddc:hover div:nth-child(2) p:first-child {
+  color: #1e7cff;
+}
+div.mainddc:hover div:nth-child(3) {
+  color: #1e7cff;
+}
+div.mainddc div:nth-child(2) {
+  font-size: 16px;
+  font-weight: 500;
+  flex-grow: 1;
+  white-space: nowrap;
+  overflow: hidden;
+}
+div.mainddc div:nth-child(2) p:nth-child(1) {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+div.mainddc div:nth-child(2) p:nth-child(2) {
+  font-size: 14px;
+  color: gray;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+div.mainddc div:nth-child(3) {
+  font-size: 15px;
+}
+
+/*# sourceMappingURL=DropDownCard.css.map */
