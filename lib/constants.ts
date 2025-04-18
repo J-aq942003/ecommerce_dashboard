@@ -1,0 +1,11 @@
+export enum ProjectColors {
+  BACKGROUND_DARK = "#111c2d",
+  BACKGROUND_PRIMARY = "#f8f8f8",
+  TEXT_COLOR1 = "#42a5f5",
+  TEXT_COLOR2 = "#bbdefb6e",
+  TEXT_COLOR3 = "#808080",
+  TEXT_COLOR4 = "#C0C0C0",
+  TEXT_COLOR5 = "#A9A9A9",
+  TEXT_COLOR_DARK1 = "#FFFFFF",
+  TEXT_COLOR_DARK2 = "#000000",
+}

@@ -19,13 +19,12 @@ const SideBarDropDown = ({
         {icon}
         <p>{title}</p>
         <RiArrowLeftSLine
-          className={`transform-[rotate(${
-            isOpen ? "90deg" : "-90deg"
-          })] ml-auto`}
+          className={`transform-[rotate()]ff duration-300 ml-auto`}
+          style={{ transform: `rotate(${isOpen ? "90deg" : "-90deg"})` }}
         />
       </div>
       {isOpen && (
-        <ul className="flex flex-col gap-1.5 ml-5 borderff border-red-400 my-2 *:text-[#00000093] *:[&:hover]:text-[#42a5f5]">
+        <ul className="flex flex-col gap-1.5 ml-5 borderff border-red-400 my-2 *:text-[#00000093] *:[&:hover]:text-[#42a5f5] ">
           {names.map((item, index) => {
             return (
               <li

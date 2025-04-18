@@ -152,7 +152,7 @@ const SideBar = () => {
                         <p>Analytics</p>
                       </div>
                       <div>
-                        <GoStack className="text-[20px]" />
+                        <GoStack className="text-[20px] dark:text-[#2dbb2d]" />
                         <p>CRM</p>
                       </div>
                       <SideBarDropDown

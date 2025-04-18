@@ -5,6 +5,7 @@ import "./globals.css";
 import StoreProvider from "@/redux/StoreProvider";
 import { Provider } from "@/components/ui/provider";
 import dotenv from "dotenv";
+import { ProjectColors } from "@/lib/constants";
 // import { store } from "@/redux/store";
 ///
 dotenv.config();
@@ -25,8 +26,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${poppins.variable} antialiased`}>
+    <html lang="en" className={``}>
+      <body
+        className={`${poppins.variable} antialiased not-dark:bg-[#f8f8f8] dark:bg-[${ProjectColors.BACKGROUND_DARK}]`}
+      >
         {/*Wrapping the App with the redux store*/}
         <StoreProvider>{children}</StoreProvider>
       </body>
