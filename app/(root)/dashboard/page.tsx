@@ -10,7 +10,9 @@ import React from "react";
 const page = () => {
   return (
     <main className="flex flex-col border-2 px-4  border-fuchsia-600">
-      <div className="py-6">
+      <div className="flex border border-black gap-16 py-6">
+        <NavigationMenuDropDown />
+        <NavigationMenuDropDown />
         <NavigationMenuDropDown />
       </div>
       {/* <DropDownContainer /> */}

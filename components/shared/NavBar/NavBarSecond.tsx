@@ -2,8 +2,13 @@ import React, { useRef, useState } from "react";
 import "@/style/components/shared/NavBar/NavBarSecond.css";
 import Image from "next/image";
 import logoSVG from "@/public/assets/svgs/logo-icon.8af48e89.svg";
+import { GrLanguage } from "react-icons/gr";
 import DropDownContainer from "../DropDownContainer";
+import { HiOutlineInbox } from "react-icons/hi";
+import { TbCategory } from "react-icons/tb";
 import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
+import { IoMdNotificationsOutline } from "react-icons/io";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 ///
 const NavBarSecond = () => {
   //useRef's
@@ -103,13 +108,13 @@ const NavBarSecond = () => {
   return (
     <div
       id="nav-second"
-      className="hidden border border-red-400ff px-4ff py-4"
+      className="hidden borderff border-red-400ff px-4ff py-4"
       ref={navSecondRef}
     >
-      <div className="border border-black flex justify-around items-center w-[70%] mx-auto">
+      <div className="borderff border-black flex justify-around items-center w-[70%] mx-auto">
         <div
           id="dark-mode-nav-link"
-          className="hover-btns py-2 px-2 text-center rounded-full"
+          className="hover-btns py-2 hover:text-[#0b87ec] px-2 text-center rounded-full"
           onClick={(e) => {
             // console.dir(e);
             // handleNavLinkClick(e);
@@ -117,65 +122,68 @@ const NavBarSecond = () => {
           }}
         >
           {open.darkMode.isOpen ? (
-            <MdOutlineLightMode />
+            <MdOutlineLightMode className="text-[21px]" />
           ) : (
-            <MdOutlineDarkMode />
+            <MdOutlineDarkMode className="text-[21px]" />
           )}
         </div>
         <div
           id="notification-nav-link"
-          className="hover-btns py-2 px-2 text-center rounded-full"
+          className="hover-btns py-2 hover:text-[#0b87ec] px-2 text-center rounded-full"
           onClick={(e) => {
             console.dir(e);
             // handleNavLinkClick(e);
             handleNavLinkClick("notification-nav-link", e.clientX);
           }}
         >
-          <Image src={logoSVG} alt="" width={22} className="" />
+          <IoMdNotificationsOutline className="text-[21px]" />
         </div>
         <div
           id="inbox-nav-link"
-          className="hover-btns py-2 px-2 text-center rounded-full"
+          className="hover-btns py-2 hover:text-[#0b87ec] px-2 text-center rounded-full"
           onClick={(e) => {
             // console.dir(e);
             // handleNavLinkClick(e);
             handleNavLinkClick("inbox-nav-link", e.clientX);
           }}
         >
-          <Image src={logoSVG} alt="" width={22} className="" />
+          <HiOutlineInbox className="text-[21px]" />
         </div>
         <div
           id="categories-nav-link"
-          className="hover-btns py-2 px-2 text-center rounded-full"
+          className="hover-btns py-2 px-2 hover:text-[#0b87ec] text-center rounded-full"
           onClick={(e) => {
             // console.dir(e);
             // handleNavLinkClick(e);
             handleNavLinkClick("categories-nav-link", e.clientX);
           }}
         >
-          <Image src={logoSVG} alt="" width={22} className="" />
+          <TbCategory className="text-[21px]" />
         </div>
         <div
           id="select-language-nav-link"
-          className="hover-btns py-2 px-2 text-center rounded-full"
+          className="hover-btns py-2 text-[#0b87ec] px-2 text-center rounded-full"
           onClick={(e) => {
             // console.dir(e);
             // handleNavLinkClick(e);
             handleNavLinkClick("select-language-nav-link", e.clientX);
           }}
         >
-          <Image src={logoSVG} alt="" width={22} className="z-0" />
+          <GrLanguage className="text-[21px] " />
         </div>
         <div
           id="avatar-nav-link"
-          className="hover-btns py-2 px-2 text-center rounded-full"
+          className="hover-btns py-0.5 px-0.5 text-center rounded-full"
           onClick={(e) => {
             // console.dir(e);
             // handleNavLinkClick(e);
             handleNavLinkClick("avatar-nav-link", e.clientX);
           }}
         >
-          <Image src={logoSVG} alt="" width={22} className="" />
+          <Avatar className="border-2 border-red-500ff my-auto w-8 h-8">
+            <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+            <AvatarFallback>CN</AvatarFallback>
+          </Avatar>
         </div>
       </div>
       {open.notifications.isOpen && (
