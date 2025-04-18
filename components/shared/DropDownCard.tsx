@@ -3,6 +3,7 @@ import React from "react";
 import logoSVG from "@/public/assets/svgs/logo-icon.8af48e89.svg";
 import "@/style/components/shared/DropDownCard.css";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import Link from "next/link";
 ///
 type DropDownCardProps = {
   title: string;

@@ -16,17 +16,17 @@ const DropDownContainer = ({
   count = 0,
   positionX = "0",
 }: DropDownContainerProps) => {
-  const [finalPosition, setFinalPosition] = React.useState<string>(positionX);
+  // const [finalPosition, setFinalPosition] = React.useState<string>(positionX);
   console.log("notifyColor: ", notifyColor);
   console.log("positionX: ", positionX);
   useEffect(() => {
     console.log("screenX: ", window.innerWidth);
-    if (window.innerWidth < 767) setFinalPosition("auto");
+    // if (window.innerWidth < 767) setFinalPosition("auto");
   }, []);
   return (
     <div
       className="mainddcr flex z-[9999] flex-col bg-white gap-4 rounded-lg shadow-lg mt-10 borderff border-green-500 p-4 w-screen h-[50vh] md:w-[30rem]"
-      style={{ left: finalPosition }}
+      // style={{ left: finalPosition }}
     >
       <div className="flex w-full justify-between items-center borderff border-black">
         <h1 className="font-[500] text-lg">{title}</h1>

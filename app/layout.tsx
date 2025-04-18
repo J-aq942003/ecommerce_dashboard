@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={``}>
       <body
-        className={`${poppins.variable} antialiased not-dark:bg-[#f8f8f8] dark:bg-[${ProjectColors.BACKGROUND_DARK}]`}
+        className={`${poppins.variable} antialiased overflow-y-hidden not-dark:bg-[#f8f8f8] dark:bg-[${ProjectColors.BACKGROUND_DARK}]`}
       >
         {/*Wrapping the App with the redux store*/}
         <StoreProvider>{children}</StoreProvider>

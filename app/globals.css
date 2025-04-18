@@ -116,11 +116,15 @@
   box-sizing: border-box;
 }
 
-html {
-  transition: background-color 0.3s, color 0.3s;
-}
+html {}
+
+
+/* .rtl-my {
+  direction: rtl;
+} */
 
 body {
+  transition: background-color 0.3s, color 0.3s;
   /* background-color: #f8f8f8; */
 }
 
